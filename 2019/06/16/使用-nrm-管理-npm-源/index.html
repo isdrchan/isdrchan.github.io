@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="1234567891011121314➜  ~ npm -v5.6.0➜  ~ node -vv8.11.1➜  ~ nrm -V1.0.2➜  ~ nrm ls  npm ---- https://registry.npmjs.org/  cnpm --- http://r.cnpmjs.org/* taobao - https://registry.npm.taobao.org/  nj --">
+  <meta name="description" content="nrm 用于管理 npm 的源 安装  1npm install -g nrm  使用  1234567891011121314➜  ~ npm -v5.6.0➜  ~ node -vv8.11.1➜  ~ nrm -V1.0.2➜  ~ nrm ls  npm ---- https://registry.npmjs.org/  cnpm --- http://r.cnpmjs.org/* tao">
 <meta name="keywords" content="chan">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用 nrm 管理 npm 源">
+<meta property="og:title" content="nrm 和 nvm 的使用">
 <meta property="og:url" content="http://isdrchan.github.io/2019/06/16/使用-nrm-管理-npm-源/index.html">
 <meta property="og:site_name" content="Dr.Chan&#39;s Note">
-<meta property="og:description" content="1234567891011121314➜  ~ npm -v5.6.0➜  ~ node -vv8.11.1➜  ~ nrm -V1.0.2➜  ~ nrm ls  npm ---- https://registry.npmjs.org/  cnpm --- http://r.cnpmjs.org/* taobao - https://registry.npm.taobao.org/  nj --">
+<meta property="og:description" content="nrm 用于管理 npm 的源 安装  1npm install -g nrm  使用  1234567891011121314➜  ~ npm -v5.6.0➜  ~ node -vv8.11.1➜  ~ nrm -V1.0.2➜  ~ nrm ls  npm ---- https://registry.npmjs.org/  cnpm --- http://r.cnpmjs.org/* tao">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2021-03-16T10:20:41.161Z">
+<meta property="og:updated_time" content="2021-03-18T06:03:59.663Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="使用 nrm 管理 npm 源">
-<meta name="twitter:description" content="1234567891011121314➜  ~ npm -v5.6.0➜  ~ node -vv8.11.1➜  ~ nrm -V1.0.2➜  ~ nrm ls  npm ---- https://registry.npmjs.org/  cnpm --- http://r.cnpmjs.org/* taobao - https://registry.npm.taobao.org/  nj --">
+<meta name="twitter:title" content="nrm 和 nvm 的使用">
+<meta name="twitter:description" content="nrm 用于管理 npm 的源 安装  1npm install -g nrm  使用  1234567891011121314➜  ~ npm -v5.6.0➜  ~ node -vv8.11.1➜  ~ nrm -V1.0.2➜  ~ nrm ls  npm ---- https://registry.npmjs.org/  cnpm --- http://r.cnpmjs.org/* tao">
 
 
 
@@ -124,7 +124,7 @@
   };
 </script>
 
-  <title>使用 nrm 管理 npm 源 | Dr.Chan's Note</title>
+  <title>nrm 和 nvm 的使用 | Dr.Chan's Note</title>
   
 
 
@@ -306,7 +306,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">使用 nrm 管理 npm 源
+          <h1 class="post-title" itemprop="name headline">nrm 和 nvm 的使用
 
               
             
@@ -349,7 +349,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2021-03-16 18:20:41" itemprop="dateModified" datetime="2021-03-16T18:20:41+08:00">2021-03-16</time>
+                <time title="修改时间：2021-03-18 14:03:59" itemprop="dateModified" datetime="2021-03-18T14:03:59+08:00">2021-03-18</time>
               
             
           </span>
@@ -396,7 +396,29 @@
       
 
       
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">➜  ~ npm -v</span><br><span class="line">5.6.0</span><br><span class="line">➜  ~ node -v</span><br><span class="line">v8.11.1</span><br><span class="line">➜  ~ nrm -V</span><br><span class="line">1.0.2</span><br><span class="line">➜  ~ nrm ls</span><br><span class="line">  npm ---- https://registry.npmjs.org/</span><br><span class="line">  cnpm --- http://r.cnpmjs.org/</span><br><span class="line">* taobao - https://registry.npm.taobao.org/</span><br><span class="line">  nj ----- https://registry.nodejitsu.com/</span><br><span class="line">  rednpm - http://registry.mirror.cqupt.edu.cn/</span><br><span class="line">  npmMirror  https://skimdb.npmjs.com/registry/</span><br><span class="line">  edunpm - http://registry.enpmjs.org/</span><br></pre></td></tr></table></figure>
+        <h4 id="nrm-用于管理-npm-的源"><a href="#nrm-用于管理-npm-的源" class="headerlink" title="nrm 用于管理 npm 的源"></a>nrm 用于管理 npm 的源</h4><ul>
+<li>安装</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g nrm</span><br></pre></td></tr></table></figure>
+<ul>
+<li>使用</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">➜  ~ npm -v</span><br><span class="line">5.6.0</span><br><span class="line">➜  ~ node -v</span><br><span class="line">v8.11.1</span><br><span class="line">➜  ~ nrm -V</span><br><span class="line">1.0.2</span><br><span class="line">➜  ~ nrm ls</span><br><span class="line">  npm ---- https://registry.npmjs.org/</span><br><span class="line">  cnpm --- http://r.cnpmjs.org/</span><br><span class="line">* taobao - https://registry.npm.taobao.org/</span><br><span class="line">  nj ----- https://registry.nodejitsu.com/</span><br><span class="line">  rednpm - http://registry.mirror.cqupt.edu.cn/</span><br><span class="line">  npmMirror  https://skimdb.npmjs.com/registry/</span><br><span class="line">  edunpm - http://registry.enpmjs.org/</span><br></pre></td></tr></table></figure>
+<h3 id="nvm-用于管理-node-js-版本"><a href="#nvm-用于管理-node-js-版本" class="headerlink" title="nvm 用于管理 node.js 版本"></a>nvm 用于管理 node.js 版本</h3><ul>
+<li>安装<ul>
+<li>Linux<ul>
+<li><a href="https://github.com/nvm-sh/nvm" target="_blank" rel="noopener">https://github.com/nvm-sh/nvm</a></li>
+</ul>
+</li>
+<li>Windows<ul>
+<li><a href="https://github.com/coreybutler/nvm-windows/releases" target="_blank" rel="noopener">https://github.com/coreybutler/nvm-windows/releases</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>常用命令</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">nvm arch [32|64] ： 显示node是运行在32位还是64位模式。指定32或64来覆盖默认体系结构。</span><br><span class="line">nvm install &lt;version&gt; [arch]： 该可以是node.js版本或最新稳定版本latest。（可选[arch]）指定安装32位或64位版本（默认为系统arch）。设置[arch]为all以安装32和64位版本。在命令后面添加--insecure ，可以绕过远端下载服务器的SSL验证。</span><br><span class="line">nvm list [available]： 列出已经安装的node.js版本。可选的available，显示可下载版本的部分列表。这个命令可以简写为nvm ls [available]。</span><br><span class="line">nvm on： 启用node.js版本管理。</span><br><span class="line">nvm off： 禁用node.js版本管理(不卸载任何东西)</span><br><span class="line">nvm proxy [url]： 设置用于下载的代理。留[url]空白，以查看当前的代理。设置[url]为none删除代理。</span><br><span class="line">nvm node_mirror [url]：设置node镜像，默认为https://nodejs.org/dist/.。我建议设置为淘宝的镜像https://npm.taobao.org/mirrors/node/</span><br><span class="line">nvm npm_mirror [url]：设置npm镜像，默认为https://github.com/npm/npm/archive/。我建议设置为淘宝的镜像https://npm.taobao.org/mirrors/npm/</span><br><span class="line">nvm uninstall &lt;version&gt;： 卸载指定版本的nodejs。</span><br><span class="line">nvm use [version] [arch]： 切换到使用指定的nodejs版本。可以指定32/64位[arch]。nvm use &lt;arch&gt;将继续使用所选版本，但根据提供的值切换到32/64位模式的&lt;arch&gt;</span><br><span class="line">nvm root [path]： 设置 nvm 存储node.js不同版本的目录 ,如果未设置，将使用当前目录。</span><br><span class="line">nvm version： 显示当前运行的nvm版本，可以简写为nvm v</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -486,8 +508,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -565,6 +596,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#nrm-用于管理-npm-的源"><span class="nav-number">1.</span> <span class="nav-text">nrm 用于管理 npm 的源</span></a></li></ol><li class="nav-item nav-level-3"><a class="nav-link" href="#nvm-用于管理-node-js-版本"><span class="nav-number"></span> <span class="nav-text">nvm 用于管理 node.js 版本</span></a></li></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
